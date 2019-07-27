@@ -1,0 +1,53 @@
+{
+  "name": "hello-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "homepage": "https://oryam.github.io/hello-next/",
+  "scripts": {
+    "clean:build:cache": "del \"node_modules/.cache\"",
+    "clean:build": "del \"node_modules/.cache\" dist out",
+    "dev": "node server.js",
+    "build": "npm run clean:build:cache && next build",
+    "export": "next export",
+    "start": "next start",
+    "start1": "next start -p 8000",
+    "start2": "next start -p $PORT",
+    "start3": "NODE_ENV=production node server.js",
+    "start:out": "http-server out",
+    "bundle-report": "webpack-bundle-analyzer stats.json",
+    "pages:build": "npm run clean:build && NODE_ENV=production next build",
+    "pages:export": "NODE_ENV=production next export",
+    "pages:deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^3.1.0",
+    "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.2.6",
+    "express": "^4.16.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^7.0.0",
+    "next-images": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-datetime": "^2.15.0",
+    "react-dom": "^16.5.2",
+    "react-jss": "^8.6.1",
+    "react-markdown": "^3.6.0",
+    "react-nouislider": "^2.0.1",
+    "react-slick": "^0.23.1",
+    "react-swipeable-views": "^0.12.18",
+    "react-transition-group": "^2.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.0",
+    "path": "^0.12.7",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.0"
+  }
+}

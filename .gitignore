@@ -1,0 +1,7 @@
+/node_modules
+/.next
+/out
+
+# backup files
+*.[0-9]*.js
+*.[0-9]*.json
