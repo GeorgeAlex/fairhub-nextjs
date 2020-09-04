@@ -32,7 +32,7 @@
     "isomorphic-unfetch": "^3.0.0",
     "next": "^7.0.0",
     "next-images": "^1.0.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-datetime": "^2.15.0",
